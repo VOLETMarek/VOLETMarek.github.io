@@ -1,4 +1,6 @@
-/* global style starts */
+/********** global style **********/
+
+
 
 body {
     background-color: #16c0d8;
@@ -23,8 +25,8 @@ body {
     height: 15px;
 }
 
-h2,h3 {
-    margin: 0.4rem 0 0;       
+h3, .main-title_text__intro {
+    margin: 1rem 0 0;       
 }
 
 h2 {
@@ -41,7 +43,7 @@ h3 {
 
 ul.main-section_list {
     list-style-type: disc;
-    padding: 0.5em 0 0 2em;
+    padding: 0.5em 0 0 1.2em;
 }
 
 .main-section_progressbar__large {
@@ -54,9 +56,11 @@ ul.main-section_list {
     height: 5px;
 }
 
-/* global style ends */
 
-/* header style starts */
+
+/********** header **********/
+
+
 
 .main-title {
     display: flex;
@@ -86,10 +90,14 @@ ul.main-section_list {
     border-radius: 50%;
 }
 
-/* Main section left style starts */
+
+
+/********** Main section left **********/
+
+
 
 .left-content {
-    width: 70%;
+    width: 60%;
     background-color: white;
     padding: 1rem;
 }
@@ -122,19 +130,35 @@ ul.main-section_list {
     inline-size: 20em;
 }
 
-/* Main section left style ends */
 
-/* Main section right starts  */
+
+/********** Main section right **********/
+
+
 
 .right-content {
-    width: 30%;
+    width: 40%;
     background-color: #f3f3f3;
     padding: 1rem;
 }
 
 .main-section_list__infos {
     font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
-/* Main section right ends */
+.section-list__item {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.main-section_profil_info {
+    padding: 1rem;
+    background: #004f5c;
+    color: white;
+}
+
+
   
