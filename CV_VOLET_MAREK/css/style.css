@@ -1,0 +1,140 @@
+/* global style starts */
+
+body {
+    background-color: #16c0d8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    line-height: normal;
+}
+
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    margin: 1rem auto;
+    width: 900px;
+    display: flex;
+}
+
+.main-title, section {
+    margin : 1rem;
+}
+
+.section-list_icon {
+    width : 15px;
+    height: 15px;
+}
+
+h2,h3 {
+    margin: 0.4rem 0 0;       
+}
+
+h2 {
+    font-weight: 700;
+    font-size: larger;
+    padding: 0em 0.4em;
+    background-color: #16c0d8;
+    color: #004f5c;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+ul.main-section_list {
+    list-style-type: disc;
+    padding: 0.5em 0 0 2em;
+}
+
+.main-section_progressbar__large {
+    width: 250px;
+    height: 5px;
+}
+
+.main-section_progressbar{
+    width: 100px;
+    height: 5px;
+}
+
+/* global style ends */
+
+/* header style starts */
+
+.main-title {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.8em;
+}
+
+.main-title_title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    line-height: 2;
+}
+
+.main-title_jobname {
+    font-weight: 700;
+    font-size: large;
+}
+
+.main-title_name {
+    font-weight: 500;
+    color: #04515e;
+}
+
+.main-title_profilpic {
+    border-radius: 50%;
+}
+
+/* Main section left style starts */
+
+.left-content {
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section_text {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.main-section_text__job, .main-section_text {
+    color: #16c0d8;
+    font-weight: 600;
+}
+
+.section-text_firm {
+    color: #16c0d8;
+}
+
+.main-section_title {
+    align-self: flex-start;
+    margin: 0em;
+}
+
+.main-section_progressbar__wide {
+    inline-size: 20em;
+}
+
+/* Main section left style ends */
+
+/* Main section right starts  */
+
+.right-content {
+    width: 30%;
+    background-color: #f3f3f3;
+    padding: 1rem;
+}
+
+.main-section_list__infos {
+    font-size: smaller;
+}
+
+/* Main section right ends */
+  
