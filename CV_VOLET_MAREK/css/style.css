@@ -46,15 +46,11 @@ ul.main-section_list {
     list-style-type: disc;
     padding: 0.5em 0 0 1.2em;
     font-size: smaller;
+    line-height: 1rem;
 }
 
 .main-section_progressbar__large {
     width: 250px;
-    height: 5px;
-}
-
-.main-section_progressbar{
-    width: 100px;
     height: 5px;
 }
 
@@ -99,7 +95,7 @@ ul.main-section_list {
 
 
 .left-content {
-    width: 60%;
+    width: 65%;
     background-color: white;
     padding: 1rem;
 }
@@ -148,8 +144,15 @@ ul.main-section_list {
 
 
 
+
+.main-section_right {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0 0 1rem; 
+}
+
 .right-content {
-    width: 40%;
+    width: 35%;
     background-color: #f3f3f3;
 }
 
@@ -182,13 +185,22 @@ ul.main-section_list {
 }
 
 .main-section_progressbar {
+    width: 100px;
+    height: 5px;
     display: block;
-    margin: 0.3rem 0 0;
+    margin: 0.3rem 0 0.3rem;
 }
 
 .main-section_title__right {
     background-color: #f3f3f3;
     padding: 0;
+}
+
+.main-section_list__right {
+    list-style-type: disc;
+    padding: 0.5em 0 0 1.2em;
+    font-size: smaller;
+    line-height: 1.5rem;
 }
 
 .section-list_social{
@@ -199,5 +211,31 @@ ul.main-section_list {
 .main-section-social_wrapper {
     display: flex;
     gap: 1.5rem;
-    margin: 1rem 0 0;
+    margin: 0.8rem 0 0;
 }
+
+
+
+/********** Responsive Section **********/
+
+
+
+@media (max-width: 940px) {
+    body {
+        width: 940px;
+    }
+  }
+
+@media (max-width: 240px) {
+    .wrapper {
+        flex-direction: column;
+    }
+  
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .left-content {
+        padding: 0;
+    }
+  }
