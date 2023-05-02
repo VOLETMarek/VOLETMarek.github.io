@@ -37,6 +37,15 @@ h3 {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-style: italic;
+}
+
 .section-list__item {
     display: flex;
     gap: 0.4rem;
@@ -47,11 +56,6 @@ ul.main-section_list {
     padding: 0.5em 0 0 1.2em;
     font-size: smaller;
     line-height: 1rem;
-}
-
-.main-section_progressbar__large {
-    width: 250px;
-    height: 5px;
 }
 
 
@@ -108,21 +112,15 @@ ul.main-section_list {
 .main-section_text {
     display: block;
     color: #16c0d8;
-    font-weight: 600;
 }
 
-.main-section_text__job {
-    color: #16c0d8;
-    font-weight: 600;
-}
-
-.section-text_firm {
+.main-section_text__job, .section-text_firm {
     color: #16c0d8;
 }
 
 .main-section_title {
     align-self: flex-start;
-    margin: 0em;
+    margin-top: 1rem;
 }
 
 .main-section_progressbar__wide {
@@ -134,7 +132,7 @@ ul.main-section_list {
     margin: 0.2rem 0 0;
 }
 
-.section-text_diplome {
+.section-text_text {
     margin: 0.5em 0 0;
 }
 
@@ -180,7 +178,7 @@ ul.main-section_list {
 
 }
 
-.section-list_item__info, .section-list_item__lang {
+.section-list_item__info {
     margin: 0.5rem 0 0;
 }
 
@@ -201,11 +199,6 @@ ul.main-section_list {
     padding: 0.5em 0 0 1.2em;
     font-size: smaller;
     line-height: 1.5rem;
-}
-
-.section-list_social{
-    width: 30px;
-    height: 30px;
 }
 
 .main-section-social_wrapper {
