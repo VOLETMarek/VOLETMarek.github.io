@@ -52,11 +52,19 @@ p {
 }
 
 ul.main-section_list {
-    list-style-type: disc;
     padding: 0.5em 0 0 1.2em;
     font-size: smaller;
     line-height: 1rem;
 }
+
+ul.main-section_list li::before {
+    content: "\2022";
+    color: #16c0d8;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 
 
 
@@ -159,7 +167,7 @@ ul.main-section_list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .main-section_profil_info {
@@ -189,6 +197,11 @@ ul.main-section_list {
     margin: 0.3rem 0 0.3rem;
 }
 
+.section-list_email, .section-list_location, .section-list_nationalite, .section-list_travail, .section-list_travail, .section-list_phone_number, .section-list_social {
+    display: flex;
+    align-self: center;
+}
+
 .main-section_title__right {
     background-color: #f3f3f3;
     padding: 0;
@@ -207,6 +220,17 @@ ul.main-section_list {
     margin: 0.8rem 0 0;
 }
 
+.main-section_loisirs {
+    display: flex;
+    gap: 0.4rem;
+    margin: 1rem 0 0;
+}
+
+.main-section_text_loisirs {
+    color: #16c0d8;
+    font-weight: 600;
+    margin: 0;
+}
 
 
 /********** Responsive Section **********/
