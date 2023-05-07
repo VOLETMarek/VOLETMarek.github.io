@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: 1rem auto;
     width: 900px;
     display: flex;
@@ -40,6 +40,10 @@ h3 {
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    color: #16c0d8;
 }
 
 p {
@@ -96,15 +100,37 @@ ul.main-section_list li::before {
     color: #04515e;
 }
 
-.main-title_profilpic {
-    border-radius: 50%;
-}
-
 
 
 /********** Main section left **********/
 
 
+
+.main-title_profilpic {
+    width: 110px;
+    height: 110px;
+    border: solid white;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.main-title_profilpic:hover {
+    transform: scale(1.1);
+    border: solid #16c0d8;
+}
+
+.main-title_jobname::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #16c0d8;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-title_jobname:hover::after {
+    transform: scale(1);
+}
 
 .left-content {
     width: 65%;
@@ -129,6 +155,11 @@ ul.main-section_list li::before {
 .main-section_title {
     align-self: flex-start;
     margin-top: 1rem;
+    transition: .5s;
+}
+
+.main-section_title:hover {
+    background-color: white;
 }
 
 .main-section_progressbar__wide {
@@ -147,7 +178,6 @@ ul.main-section_list li::before {
 
 
 /********** Main section right **********/
-
 
 
 
@@ -183,7 +213,11 @@ ul.main-section_list li::before {
     background-color: #16c0d8;;
     border: solid #16c0d8;
     border-radius: 50%;
+    transition: .1s;
+}
 
+.section-list_icon:hover {
+    transform: scale(1.3);
 }
 
 .section-list_item__info {
@@ -237,22 +271,25 @@ ul.main-section_list li::before {
 
 
 
-@media (max-width: 940px) {
+@media (max-width: 840px) {
     body {
-        width: 940px;
-    }
-  }
-
-@media (max-width: 240px) {
-    .wrapper {
-        flex-direction: column;
-    }
-  
-    .left-content, .right-content {
-        width: 100%;
-    }
-
-    .left-content {
+        background-color: white;
         padding: 0;
     }
-  }
+    .wrapper {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .left-content,
+    .right-content {
+        width: auto;
+    }
+    .right-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-section_profil_info {
+        order: 1;
+    }
+}
