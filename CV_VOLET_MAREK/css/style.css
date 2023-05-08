@@ -8,6 +8,12 @@ body {
     font-size: small;
     line-height: normal;
     letter-spacing: 0.04em;
+    transition: all 0.2s ease-in-out;
+}
+
+body.dark {
+    color: white;
+    background-color: #129aad;
 }
 
 .wrapper {
@@ -31,6 +37,10 @@ h2 {
     padding: 0em 0.4em;
     background-color: #16c0d8;
     color: #004f5c;
+}
+
+h2.dark {
+    color: white;
 }
 
 h3 {
@@ -90,6 +100,34 @@ ul.main-section_list li::before {
     line-height: 2;
 }
 
+.btn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #16c0d8;
+    align-self: flex-end;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn.active::before {
+    background-color: #129aad;
+    left: calc(100% - 20px - 5%);
+}
+
 .main-title_jobname {
     font-weight: 700;
     font-size: large;
@@ -112,6 +150,10 @@ ul.main-section_list li::before {
     border: solid white;
     border-radius: 50%;
     transition: 1s;
+}
+
+.main-title_profilpic.dark {
+    border-color: #16c0d8;
 }
 
 .main-title_profilpic:hover {
@@ -138,6 +180,10 @@ ul.main-section_list li::before {
     padding: 1rem;
 }
 
+.left-content.dark {
+    background-color: #181a1b;
+}
+
 .main-section {
     display: flex;
     flex-direction: column;
@@ -159,7 +205,8 @@ ul.main-section_list li::before {
 }
 
 .main-section_title:hover {
-    background-color: white;
+    color: white;
+    background-color: #003f4a;
 }
 
 .main-section_progressbar__wide {
@@ -190,6 +237,10 @@ ul.main-section_list li::before {
 .right-content {
     width: 35%;
     background-color: #f3f3f3;
+}
+
+.right-content.dark {
+    background-color: #1f2123;
 }
 
 .main-section_list__infos {
@@ -239,6 +290,10 @@ ul.main-section_list li::before {
 .main-section_title__right {
     background-color: #f3f3f3;
     padding: 0;
+}
+
+.main-section_title__right.dark {
+    background-color: #1f2123;
 }
 
 .main-section_list__right {
