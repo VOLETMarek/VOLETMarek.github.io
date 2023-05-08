@@ -155,6 +155,10 @@ h2 {
   margin-top: 15px;
 }
 
+#contact {
+  background-color: #181f26;
+}
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
   .container h1 {
