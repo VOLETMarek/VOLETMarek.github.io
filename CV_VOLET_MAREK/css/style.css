@@ -347,4 +347,13 @@ ul.main-section_list li::before {
     .main-section_profil_info {
         order: 1;
     }
+    .main-title {
+        flex-wrap: nowrap;
+    }
+    .main-title_profilpic {
+        align-self: center;
+    }
+    .main-title_jobname {
+        font-size: small;
+    }
 }
