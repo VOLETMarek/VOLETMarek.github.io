@@ -4,16 +4,11 @@ The goal here is to prepare the creation of a recipe site, which will list cooki
 
 ## Table of contents
 
----
-
 - [Features](#features)
 - [The challenge](#the-challenge)
 - [My process](#my-process)
 
-
 ## Features
-
----
 
 ### <em>Headers</em> :
 
@@ -39,15 +34,11 @@ The goal here is to prepare the creation of a recipe site, which will list cooki
 
 ## The challenge : 
 
----
-
 - start by creating the <em>wireframes</em> for the home page and the recipe page. To manage responsive, 3 formats are expected : mobile, tablet and desktop. 
 
 - write <em>user stories</em> (use feature section above)
 
 ## My process :
-
----
 
 <strong>Built with </strong>
 - Whimsical (https://whimsical.com)
