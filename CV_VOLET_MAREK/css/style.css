@@ -201,6 +201,8 @@ ul.main-section_list li::before {
 .main-section_title {
     align-self: flex-start;
     margin-top: 1rem;
+    border: solid 1px #16c0d8;
+    border-radius: 5px;
     transition: .5s;
 }
 
