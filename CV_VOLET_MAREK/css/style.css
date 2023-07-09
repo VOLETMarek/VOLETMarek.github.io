@@ -209,10 +209,6 @@ ul.main-section_list li::before {
     background-color: #003f4a;
 }
 
-.main-section_progressbar__wide {
-    inline-size: 20em;
-}
-
 .main-section_date_location {
     font-size: x-small;
     margin: 0.2rem 0 0;
@@ -319,6 +315,10 @@ ul.main-section_list li::before {
     color: #16c0d8;
     font-weight: 600;
     margin: 0;
+}
+
+.section-list_item__lang {
+    margin: 0.5rem 0 0;
 }
 
 
